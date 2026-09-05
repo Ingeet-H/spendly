@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy - Spendly{% endblock %}
+
+{% block content %}
+<div class="privacy-page">
+    <div class="privacy-container">
+        <h1 class="privacy-title">Privacy Policy</h1>
+        <p class="privacy-last-updated">Last updated: September 5, 2026</p>
+
+        <section class="privacy-section">
+            <h2 class="privacy-section-title">1. Data We Collect</h2>
+            <p>We collect information that you provide directly to us when you create an account and log your expenses. This includes your email address, account credentials, and the financial transaction details you choose to record (amount, category, date, and description).</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2 class="privacy-section-title">2. How We Use Your Data</h2>
+            <p>Your data is used exclusively to provide the expense tracking service. We use your transaction history to generate spending reports and summaries. We do not use your personal financial data for advertising or marketing purposes.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2 class="privacy-section-title">3. Data Storage</h2>
+            <p>We employ industry-standard security measures to protect your data from unauthorized access. Your data is stored securely, and we implement strict access controls to ensure that only authorized systems can interact with your information.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2 class="privacy-section-title">4. Third Party Services</h2>
+            <p>Spendly does not sell, trade, or otherwise transfer your personal financial information to outside parties. We may use trusted third-party infrastructure providers (e.g., cloud hosting) who are bound by strict confidentiality agreements.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2 class="privacy-section-title">5. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us at support@spendly.app.</p>
+        </section>
+
+        <div class="privacy-footer">
+            <a href="{{ url_for('landing') }}" class="btn-primary">Back to Home</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .privacy-page {
+        padding: 4rem 2rem;
+        min-height: calc(100vh - 60px - 100px);
+    }
+    .privacy-container {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.7;
+        color: var(--ink-soft);
+    }
+    .privacy-title {
+        font-family: var(--font-display);
+        font-size: 3rem;
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .privacy-last-updated {
+        text-align: center;
+        color: var(--ink-muted);
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+    .privacy-section {
+        margin-bottom: 2.5rem;
+    }
+    .privacy-section-title {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        color: var(--ink);
+        margin-bottom: 1rem;
+    }
+    .privacy-footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        text-align: center;
+    }
+</style>
+{% endblock %}
